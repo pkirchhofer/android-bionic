@@ -152,6 +152,8 @@
 #define __NR_swapon                       (__NR_SYSCALL_BASE + 87)
 #define __NR_swapoff                      (__NR_SYSCALL_BASE + 115)
 #define __NR_getsid                       (__NR_SYSCALL_BASE + 147)
+#define __NR_ioperm                       (__NR_SYSCALL_BASE + 101)
+#define __NR_iopl                         (__NR_SYSCALL_BASE + 110)
 
 #ifdef __arm__
 #define __NR_exit_group                   (__NR_SYSCALL_BASE + 248)

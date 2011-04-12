@@ -289,3 +289,6 @@ int	stime(time_t *)	25
 int	swapon(const char *, int)	87
 int	swapoff(const char *)	115
 pid_t	getsid(pid_t pid)	147
+
+int	ioperm(unsigned long, unsigned long, int)	101
+int	iopl(int)	110
