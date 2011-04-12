@@ -282,3 +282,10 @@ int     eventfd:eventfd2(unsigned int, int)  356,328
 # ARM-specific ARM_NR_BASE == 0x0f0000 == 983040
 int     __set_tls:ARM_set_tls(void*)                                 983045,-1
 int     cacheflush:ARM_cacheflush(long start, long end, long flags)  983042,-1
+
+# busybox: 2010-01-17
+int	adjtimex(struct timex *)	124
+int	stime(time_t *)	25
+int	swapon(const char *, int)	87
+int	swapoff(const char *)	115
+pid_t	getsid(pid_t pid)	147
