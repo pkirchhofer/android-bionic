@@ -14,8 +14,10 @@ libc_common_src_files := \
 	unistd/eventfd.c \
 	unistd/exec.c \
 	unistd/fcntl.c \
+	unistd/fdatasync.c \
 	unistd/fnmatch.c \
 	unistd/fstatfs.c \
+	unistd/fsync.c \
 	unistd/ftime.c \
 	unistd/ftok.c \
 	unistd/getcwd.c \

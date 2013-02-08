@@ -26,27 +26,8 @@
  * SUCH DAMAGE.
  */
 #include <unistd.h>
-#include <fcntl.h>
-#include <stdarg.h>
 
-extern int  __open(const char*, int, int);
-
-int open(const char *pathname, int flags, ...)
+int fsync(int fd)
 {
-    mode_t  mode = 0;
-
-    flags |= O_LARGEFILE;
-    flags &= ~O_SYNC;
-
-    if (flags & O_CREAT)
-    {
-        va_list  args;
-
-        va_start(args, flags);
-        mode = (mode_t) va_arg(args, int);
-        va_end(args);
-    }
-
-    return __open(pathname, flags, mode);
+  return 0;
 }
-
