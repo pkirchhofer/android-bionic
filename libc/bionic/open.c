@@ -38,6 +38,7 @@ int open(const char *pathname, int flags, ...)
     mode_t  mode = 0;
 
     flags |= O_LARGEFILE;
+    flags &= ~O_SYNC;
 
     if (flags & O_CREAT)
     {
@@ -57,6 +58,7 @@ int __open_2(const char *pathname, int flags) {
     }
 
     flags |= O_LARGEFILE;
+    flags &= ~O_SYNC;
 
     return __open(pathname, flags, 0);
 }

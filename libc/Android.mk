@@ -6,6 +6,9 @@ include $(LOCAL_PATH)/arch-$(TARGET_ARCH)/syscalls.mk
 # =========================================================
 libc_common_src_files := \
 	$(syscall_src) \
+	unistd/fsync.c \
+	unistd/fdatasync.c \
+	unistd/sync.c \
 	unistd/alarm.c \
 	unistd/exec.c \
 	unistd/fnmatch.c \
